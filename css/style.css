@@ -1,0 +1,104 @@
+.app{
+    background-image: linear-gradient(to right, #1e5776, #153f55);
+    font-family: 'Merriweather', serif;
+    color: white;
+}
+
+.title{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.game-section .instruction{
+    font-size: 25px;
+    user-select: none;
+    cursor: pointer;
+}
+.game-section .score, .game-section .timer{
+    font-size: 20px;
+}
+.game-section .timer .timer-value{
+    display: inline-block;
+    width: 42px;
+}
+.game-section .score span{
+    display: inline-block;
+    width: 42px;
+}
+.game-section .cookie-img{
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    z-index: 200;
+}
+.game-section .cookie-div{
+    position: relative;
+    width: 300px;
+    margin: 0px auto;
+    transition: 0.1s;
+}
+.game-section .cookie-div::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    animation-name: shadow-bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.active{
+    transform: scale(0.95);
+}
+
+.tap-active{
+    animation: size-bounce 0.8s infinite;
+}
+
+.app-flex{
+    height: 100vh;
+}
+
+footer{
+    font-size: 18px;
+}
+
+@keyframes shadow-bounce {
+    0%{
+        box-shadow: 0px 0px 70px black;
+    }
+    50%{
+        box-shadow: 0px 0px 30px black;
+    }
+    100%{
+        box-shadow: 0px 0px 70px black;
+    }
+}
+
+@keyframes size-bounce{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 575px){
+    .title{
+        font-size: 40px;
+    }
+
+    .game-section .cookie-div{
+        width: 250px;
+    }
+}
+

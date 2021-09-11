@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="app">
+    
+    <div class="app-flex d-flex flex-column justify-content-between">
+        <div class="app text-center py-sm-5 py-4">
+            <div class="container">
+                <h1 class="title pb-sm-4 pb-3">Cookie Clicker</h1>
+                <div class="py-sm-4 py-1"></div>
+                <div class="game-section">
+                    <p class="instruction mb-3">Tap the cookie!</p>
+                    <p class="timer mb-1">Time: <span class="timer-value"></span></p>
+                    <p class="score pb-4">Score: <span id="score-value">0</span></p>
+                    <div class="cookie-div" id="cookie">
+                        <img src="./images/cookie.png" class="cookie-img" draggable="false">
+                    </div>
+                </div>
+                <div class="loader">
+                    
+                </div>
+            </div>
+        </div>
+        <footer class="text-center py-sm-4 py-1">
+            <div class="container">
+                <p>Application made by XLR.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+
+</body>
+</html>
